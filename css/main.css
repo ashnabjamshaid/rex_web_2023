@@ -45,6 +45,7 @@ Version: 		1.0.0
 
 /* preloader styles */
 
+
 .preloader {
 	position: fixed;
 	top: 0;
@@ -164,13 +165,6 @@ Version: 		1.0.0
  *
  * ========================================================= */
 
-/* Set the size of the div element that contains the map */
-#map {
-	height: 400px;
-	/* The height is 400 pixels */
-	width: 100%;
-	/* The width is the width of the web page */
-  } 
 
 
 .slider {
@@ -834,6 +828,7 @@ select.bs-select-hidden,select.selectpicker {
 html,body {
 	height: 100%;
 	font-size: inherit;
+	font-family: 'Gilroy';
 }
 
 body {
@@ -844,7 +839,8 @@ body {
 }
 
 img {
-	max-width: 100%;
+	
+	max-width: 40%;
 	height: auto;
 }
 
@@ -867,7 +863,7 @@ a:hover,a:focus {
 
 body {
 	font-weight: 400;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	letter-spacing: .0625rem;
 	color: #55565b;
 	font-size: .75rem;
@@ -876,7 +872,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0 0 .9375rem;
-	font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #55565b;
 	line-height: 1.1;
 }
@@ -897,7 +893,7 @@ h2 {
 h3 {
 	font-size: 1.125rem;
 	line-height: 1.2;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .cursive-style {
@@ -1024,11 +1020,11 @@ h3 {
 /*********************** transparent header ***********************/
 
 .main-header.header-white.transparent .navbar .navbar-brand img:first-child {
-	display: none;
+	display: none !important;
 }
 
 .main-header.header-white.transparent .navbar .navbar-brand img:last-child {
-	display: block;
+	display: block !important;
 }
 
 /******* navigation styles *******/
@@ -3432,6 +3428,10 @@ em.state-invalid {
 	margin-left: 0;
 	padding: 0;
 	font-size: inherit;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center
 }
 
 .main-header .navbar .navbar-nav li {
@@ -3671,7 +3671,7 @@ em.state-invalid {
 
 .main-header p {
 	font-weight: 500;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-size: .75rem;
 	line-height: 2.1;
 	letter-spacing: .0625rem;
@@ -3851,14 +3851,14 @@ em.state-invalid {
 	padding: .3rem 0 0;
 	font-size: .9rem;
 	color: #7d7d7d;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 700;
 }
 
 .mega-menus .mega-menu-multiple .cart-list .dropdown-menu-container > .dropdown-menu h4 {
 	color: #7d7d7d;
 	font-size: .75rem;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	text-transform: capitalize;
 	font-weight: 700;
 	line-height: .5;
@@ -3868,7 +3868,7 @@ em.state-invalid {
 .mega-menus .mega-menu-multiple .cart-list .dropdown-menu-container > .dropdown-menu h6 {
 	color: #7d7d7d;
 	font-size: .75rem;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	text-transform: capitalize;
 	font-weight: 500;
 	line-height: 1;
@@ -4036,7 +4036,7 @@ em.state-invalid {
 	max-width: 51.43rem;
 	font-size: 1.143rem;
 	color: #fff;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 400;
 }
 
@@ -4061,7 +4061,7 @@ em.state-invalid {
 .visual-title {
 	font-size: 1.875rem;
 	line-height: 1.2;
-	font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #fff;
 	display: block;
 	font-weight: 300;
@@ -4104,7 +4104,7 @@ em.state-invalid {
 
 .visual-text-v2 .visual-title {
 	font-weight: 700;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .visual-text-v3 {
@@ -4209,7 +4209,7 @@ em.state-invalid {
 	outline: none;
 	font-weight: 500;
 	cursor: pointer;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	border-radius: 0;
 	-webkit-transition: all linear .3s;
 	-o-transition: all linear .3s;
@@ -4393,7 +4393,7 @@ em.state-invalid {
 .btn.btn-small-font {
 	font-size: .875rem;
 	font-weight: 700;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .btn.has-shadow {
@@ -4577,7 +4577,7 @@ em.state-invalid {
 .btn-alternate.btn.btn-small-font {
 	font-size: .875rem;
 	font-weight: 700;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .btn-alternate.btn.has-shadow {
@@ -4780,7 +4780,7 @@ em.state-invalid {
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-bottom: .9375rem;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	letter-spacing: .1429rem;
 }
 
@@ -4792,7 +4792,7 @@ em.state-invalid {
 	display: block;
 	margin-bottom: 2rem;
 	color: #575757;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .col-wrap {
@@ -5036,7 +5036,7 @@ main.no-banner {
 	display: block;
 	margin-bottom: 1.5rem;
 	font-size: .875rem;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 600;
 	color: #55565b;
 }
@@ -5073,7 +5073,7 @@ main.no-banner {
 }
 
 .element-heading {
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 300;
 }
 
@@ -5177,7 +5177,7 @@ pre {
 	font-size: .875rem;
 	line-height: 1.2;
 	font-weight: 500;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #55565b;
 }
 
@@ -5208,7 +5208,7 @@ pre {
 	margin-bottom: .625rem;
 	letter-spacing: .0625rem;
 	line-height: 1.875rem;
-	font-style: italic;
+	/* font-style: italic; */
 	color: #55565b;
 }
 
@@ -5348,7 +5348,7 @@ pre {
 	text-transform: uppercase;
 	color: #212121;
 	font-size: .875rem;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .ico-box .link-holder .link-more:hover {
@@ -5505,7 +5505,17 @@ pre {
 	bottom: -1.429rem;
 }
 
+/******* REX BACKGROUND IMAGES *******/
+
+.alpha_bg {
+	background-image: url("../img/alpha-banner-01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+ }
+
 /******* parallax images styles *******/
+
+
 
 .visual-banner {
 	background-image: url('../img/visual-14.jpg');
@@ -5687,7 +5697,7 @@ pre {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 400;
 	color: #55565b;
 }
@@ -6488,7 +6498,7 @@ pre {
 
 .form-control {
 	border: .1429rem solid #f1f1f1;
-	font: 1.125rem/2rem 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 1.125rem/2rem 'Gilroy', sans-serif;
 	padding: 0 .9375rem;
 	background: none;
 	letter-spacing: .2429rem;
@@ -7160,7 +7170,7 @@ a.full-width-icon:hover .social-text {
 }
 
 .waituk_contact-form .form-control {
-	font: .875rem/1 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: .875rem/1 'Gilroy', sans-serif;
 	letter-spacing: 0;
 	font-weight: 500;
 }
@@ -7192,7 +7202,7 @@ a.full-width-icon:hover .social-text {
 /******* contact info styles *******/
 
 .contact-title {
-	font: 700 .8571rem/2.1 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 700 .8571rem/2.1 'Gilroy', sans-serif;
 	margin-bottom: 2.8125rem;
 }
 
@@ -7641,7 +7651,7 @@ a.full-width-icon:hover .social-text {
 }
 
 .accordion-container .card .card-header h5 {
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .accordion-container .card .card-header h5 a {
@@ -7736,7 +7746,7 @@ a.full-width-icon:hover .social-text {
 }
 
 .accordion-container.accordion-secondary .card .card-header h5 {
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .accordion-container.accordion-secondary .card .card-header h5 a {
@@ -7829,7 +7839,7 @@ a.full-width-icon:hover .social-text {
 
 .pricing-block h4 {
 	color: #55565b;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 400;
 	text-transform: capitalize;
 }
@@ -8424,7 +8434,7 @@ a.full-width-icon:hover .social-text {
 /******* badge styles *******/
 
 .label-block .custom-badge {
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 }
 
 .label-block .custom-badge.badge {
@@ -9481,11 +9491,12 @@ a.full-width-icon:hover .social-text {
 	color: #575757;
 	font-size: 1.875rem;
 	line-height: 1.2;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	margin-bottom: 1.875rem;
 }
+
 
 .slider-sub-title {
 	color: #5645ff;
@@ -9727,7 +9738,7 @@ a.full-width-icon:hover .social-text {
 	font-size: .875rem;
 	line-height: 1.2;
 	font-weight: 500;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #55565b;
 }
 
@@ -9792,7 +9803,7 @@ a.full-width-icon:hover .social-text {
 	margin: 0;
 	font-size: .875rem;
 	font-weight: 500;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #212121;
 }
 
@@ -9846,7 +9857,7 @@ a.full-width-icon:hover .social-text {
 	margin: 0;
 	font-size: .875rem;
 	font-weight: 500;
-	font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy', sans-serif;
 	color: #55565b;
 }
 
@@ -10352,6 +10363,27 @@ a.full-width-icon:hover .social-text {
 .circular-img img {
 	border-radius: 50%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 576px) {
 	.pricing-block .col-wrap {
@@ -11743,6 +11775,7 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.main-header.header-logo-center .navbar .navbar-brand {
+	
 		float: none;
 		margin-right: 0;
 		padding: 1.875rem 0 0;
@@ -11835,6 +11868,9 @@ a.full-width-icon:hover .social-text {
 		left: 0;
 		width: 100%;
 		padding: 0;
+	}
+	.main-block {
+		padding-top: 22.75rem !important;
 	}
 }
 
@@ -11993,6 +12029,12 @@ a.full-width-icon:hover .social-text {
 }
 
 @media only screen and (min-width: 1230px) {
+	.main_container_tablets{
+		padding-top: 12rem;
+		padding-bottom: 10rem;
+	}
+
+
 	.bordered-document #top-search {
 		margin: 0 -3.2rem !important;
 	}
@@ -12011,7 +12053,7 @@ a.full-width-icon:hover .social-text {
 		min-width: 16.88rem;
 	}
 
-	> .main-header .i-list.i-list-i-block.i-list-i-block-sm li:first-child a {
+	 .main-header .i-list.i-list-i-block.i-list-i-block-sm li:first-child a {
 		padding-left: 0;
 	}
 
@@ -12164,6 +12206,12 @@ a.full-width-icon:hover .social-text {
 }
 
 @media only screen and (min-width: 1600px) {
+	.main_container_tablets{
+		padding-top: 20rem;
+		padding-bottom: 13rem;
+	}
+
+
 	.quotation-block {
 		padding-top: 9.375rem;
 		padding-bottom: 9.375rem;
@@ -12226,6 +12274,7 @@ a.full-width-icon:hover .social-text {
 		letter-spacing: 0;
 		font-size: 1rem;
 	}
+	
 }
 
 @media (max-width: 1064px) {
@@ -12277,11 +12326,13 @@ a.full-width-icon:hover .social-text {
 		margin: 0 0;
 	}
 
+	/* mobile view image logo */
+
 	.main-header .navbar .navbar-brand {
 		margin-left: auto;
 		padding: 1.2rem 0;
 		width: 6.938rem;
-		display: block;
+		display: flex;
 	}
 
 	.main-header .navbar .navbar-nav li {
@@ -12403,8 +12454,7 @@ a.full-width-icon:hover .social-text {
 
 	.main-header .navbar-toggler {
 		padding: 0;
-		top: 13px;
-		margin-top: 0;
+		margin-top: 8%;
 		outline: none;
 		cursor: pointer;
 	}
@@ -12549,6 +12599,8 @@ a.full-width-icon:hover .social-text {
 	.footer .text-right {
 		text-align: left !important;
 	}
+
+	
 }
 
 @media (max-width: 991px) {
@@ -12961,6 +13013,8 @@ a.full-width-icon:hover .social-text {
 	.mega-menus .navbar-off-canvas.navbar-fixed-top .off-canvas-close p a {
 		text-decoration: none;
 	}
+
+	
 }
 
 @media only screen and (max-width: 990px) {
@@ -12969,9 +13023,9 @@ a.full-width-icon:hover .social-text {
 	}
 
 	.content-slot .bg-stretch img {
-		margin: 0 !important !important;
-		width: 100% !important !important;
-		height: auto !important !important;
+		margin: 0 !important;
+		width: 100% !important;
+		height: auto !important;
 	}
 
 	.content-slot .img-wrap {
@@ -12982,6 +13036,7 @@ a.full-width-icon:hover .social-text {
 	.masonary-block .gallery-item {
 		width: 100%;
 	}
+	
 }
 
 @media (max-width: 894px) {
@@ -12993,6 +13048,22 @@ a.full-width-icon:hover .social-text {
 	.mega-menus .bb-2px {
 		margin-top: 15px;
 	}
+	
+	.res_container_tablets{
+		padding-top: 13rem;
+		padding-bottom: 13rem;
+	}
+
+	.main_container_tablets{
+		padding-top: 40rem;
+		padding-bottom: 13rem;
+	}
+
+	.mobile_footer_logo
+	{
+		display: none;
+	}
+	
 }
 
 @media only screen and (max-width: 767px) {
@@ -13006,6 +13077,7 @@ a.full-width-icon:hover .social-text {
 	.footer-nav.inline-nav.text-center {
 		text-align: left !important;
 	}
+	
 }
 
 @media only screen and (max-width: 576px) {
@@ -13015,6 +13087,7 @@ a.full-width-icon:hover .social-text {
 		overflow-x: auto;
 		-ms-overflow-style: -ms-autohiding-scrollbar;
 	}
+	
 }
 
 @media (max-width: 540px) {
@@ -13042,7 +13115,44 @@ a.full-width-icon:hover .social-text {
 	.owl-carousel.owl-custom-nav .owl-controls {
 		display: none;
 	}
+	.content-block-v4 {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	.mobilecontent-block{
+		padding-top: 2rem ;
+		padding-bottom: 2rem;
+		text-align: center;
+	}
+	.res_container_mobile{
+		padding-top: 13rem;
+		padding-bottom: 13rem;
+	}
+	.mobile_footer_logo
+	{
+		display: none;
+	}
+	.mobile_footer
+	{
+		text-align: center;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @-webkit-keyframes steam {
 	0% {
